@@ -1,0 +1,302 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+#content {
+    width: 1920px;
+    height: 1080px;
+    /*border: solid 1px black;*/
+    overflow: hidden;
+    position: relative;
+}
+
+ul.content-wrap {
+    width: 300%;
+    height: 100%;
+    /*border: solid 1px blue;*/
+}
+
+.content-wrap li {
+    width: 33.333%;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+
+.content-wrap li .a_backgroud {
+    width: 100%;
+    height: 100%;
+    background: url(../img/QixiA.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.content-wrap li .b_backgroud {
+    width: 100%;
+    height: 100%;
+    background: url(../img/QixiB-dark.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.content-wrap li .c_backgroud {
+    width: 100%;
+    height: 100%;
+    background: url(../img/QixiC.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.boy {
+    width: 151px;
+    height: 291px;
+    /*border: solid 1px red;*/
+    position: absolute;
+    left: 0;
+    top: 55%;
+    background: url(../img/boy.png) no-repeat 0 -291px;
+}
+
+.walk {
+    animation: walk 1s infinite step-start;
+}
+
+.pauseWalk {
+    animation-play-state: paused;
+}
+
+.stopWalk {
+    background-position: 0 0;
+}
+
+@keyframes walk {
+    0% {
+        background-position: 0 -291px;
+    }
+    25% {
+        background-position: -151px -291px;
+    }
+    50% {
+        background-position: -302px -291px;
+    }
+    75% {
+        background-position: -604px 0px;
+    }
+    100% {
+        background-position: 0 -291px;
+    }
+}
+
+.flowerWalk {
+    animation: flower-slow 1s infinite step-start;
+}
+
+
+/*带花*/
+
+@keyframes flower-slow {
+    0% {
+        background-position: -453px -0px;
+    }
+    25% {
+        background-position: -904px -0px;
+    }
+    50% {
+        background-position: -451px -0px;
+    }
+    75% {
+        background-position: -753px -0px;
+    }
+    100% {
+        background-position: -300px -0px;
+    }
+}
+
+.boyHoldHand {
+    animation: boyHoldHand 2s 1 step-start;
+    animation-fill-mode: forwards;
+}
+
+.pauseHold {
+    animation-play-state: paused;
+}
+
+.stopHold {
+    background-position: 0 0;
+}
+
+@keyframes boyHoldHand {
+    0% {
+        background-position: -453px 0;
+    }
+    33% {
+        background-position: -904px -291px;
+    }
+    66% {
+        background-position: -753px -291px;
+    }
+    100% {
+        background-position: -602px -291px;
+    }
+}
+
+.bird {
+    width: 91px;
+    height: 71px;
+    position: absolute;
+    right: 0;
+    top: 10%;
+    background: url(../img/bird.png) no-repeat;
+}
+
+.birdFly {
+    animation: fly 0.4s infinite step-start;
+}
+
+@keyframes fly {
+    0% {
+        background-position: 0 0;
+    }
+    33% {
+        background-position: -91px 0;
+    }
+    66% {
+        background-position: -182px 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.shop {
+    width: 39.5%;
+    height: 35.5%;
+    position: absolute;
+    left: 29%;
+    top: 36.5%;
+}
+
+.door {
+    position: absolute;
+    width: 32%;
+    height: 68%;
+    left: 58.5%;
+    top: 32%;
+    overflow: hidden;
+}
+
+.door-left,
+.door-right {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+}
+
+.door-left {
+    left: 0;
+    background: url(../img/door-left.png);
+    background-size: 100% 100%;
+}
+
+.door-right {
+    right: 0;
+    background: url(../img/door-right.png);
+    background-size: 100% 100%;
+}
+
+.girl {
+    width: 151px;
+    height: 291px;
+    position: absolute;
+    right: 40%;
+    top: 40%;
+    background: url(../img/girl.png) no-repeat -755px 0;
+}
+
+.girlRound {
+    animation: girlRound 2s 1 step-start;
+    animation-fill-mode: forwards;
+}
+
+@keyframes girlRound {
+    0% {
+        background-position: 0 0;
+    }
+    25% {
+        background-position: -151px 0;
+    }
+    50% {
+        background-position: -302px -0px;
+    }
+    75% {
+        background-position: -453px -0px;
+    }
+    100% {
+        background-position: -604px -0px;
+    }
+    /* 0% {
+        background-position: -151px -0px;
+    }
+    33% {
+        background-position: -754px -0px;
+    }
+    66% {
+        background-position: -896px -0px;
+    }
+    100% {
+        background-position: 0px -0px;
+    } */
+}
+
+.wave {
+    animation: wave 2s infinite step-start;
+}
+
+@keyframes wave {
+    0% {
+        background-position: 0px 0;
+    }
+    33% {
+        background-position: -302px -0px;
+    }
+    66% {
+        background-position: -453px -0px;
+    }
+    100% {
+        background-position: -604px -0px;
+    }
+    /* 0% {
+        background-position: 0px -0px;
+    }
+    25% {
+        background-position: -151px -0px;
+    }
+    50% {
+        background-position: -302px -0px;
+    }
+    75% {
+        background-position: -453px -0px;
+    }
+    100% {
+        background-position: -604px -0px;
+    } */
+}
+
+.logo {
+    position: absolute;
+    top: -20%;
+    left: 44%;
+    font-size: 20px;
+    color: white
+}
+
+#audio {
+    float: left;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 10;
+    outline: none;
+}
